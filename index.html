@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Grill</title>
+    <link rel="icon" type="image/x-icon" href="GRILL_ICON.png">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="GRILL.jpg" alt="Logo">
+            <h1>The Grill: La Cocina Peregrina</h1>
+            <h2>Cuisine: Global Fusion Feast</h2>
+        </div>
+        
+        <div class="reservation-form">
+            <h3>Make a Reservation</h3>
+            <p>Escape the ordinary and embark on a culinary adventure at La Cocina Peregrina, "The Wandering Kitchen." Our vibrant menu is a celebration of global flavors, brought together with a modern and delicious twist.</p><br>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                <label for="cuisine">Type of Cuisine:</label>
+                <div id="dropdown">
+                    <button class="dropdown-toggle">
+                        <span>Menu</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <ul class="menu">
+                        <li class="menu-item dropdown">
+                            <a href="#" class="submenu-toggle">
+                                <span>Italian</span>
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="#">Carpaccio</a></li>
+                                <li class="submenu-item"><a href="#">Pasta e Ceci</a></li>
+                                <li class="submenu-item"><a href="#">Orecchiette</a></li>
+                                <li class="submenu-item"><a href="#">Cassata Siciliana</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="#" class="submenu-toggle">
+                                <span>Chinese</span>
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="#">Beggar’s Chicken (叫花鸡 Jiào huā jī)</a></li>
+                                <li class="submenu-item"><a href="#">Bamboo Rice (竹筒饭 Zhútǒng fàn)</a></li>
+                                <li class="submenu-item"><a href="#">Preserved Egg (皮蛋 Pídàn)</a></li>
+                                <li class="submenu-item"><a href="#">Stinky Tofu (臭豆腐 Chòu dòufu)</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="#" class="submenu-toggle">
+                                <span>Healthy Options</span>
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="menu-item dropdown">
+                                    <a href="#" class="submenu-toggle">
+                                        <span>Vegetarian</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <ul class="submenu">
+                                        <li class="submenu-item"><a href="#">Epic Vegetarian Tacos</a></li>
+                                        <li class="submenu-item"><a href="#">Crispy Baked Falafel</a></li>
+                                        <li class="submenu-item"><a href="#">Extra Vegetable Fried Rice</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item dropdown">
+                                    <a href="#" class="submenu-toggle">
+                                        <span>Lacto-Ovo Vegetarian</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <ul class="submenu">
+                                        <li class="submenu-item"><a href="#">Fettuccine Pumpkin Cauli-fredo</a></li>
+                                        <li class="submenu-item"><a href="#">Asparagus Quiche</a></li>
+                                        <li class="submenu-item"><a href="#">Stuffed Sweet Potatoes</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item dropdown">
+                                    <a href="#" class="submenu-toggle">
+                                        <span>Pescatarian</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <ul class="submenu">
+                                        <li class="submenu-item"><a href="#">Spicy Saffron Shrimp with Green Olives and Lemon</a></li>
+                                        <li class="submenu-item"><a href="#">Baked Cod with Lemon, Garlic, and Herbs</a></li>
+                                        <li class="submenu-item"><a href="#">Shrimp Tacos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item dropdown">
+                                    <a href="#" class="submenu-toggle">
+                                        <span>Semi-Vegetarian</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <ul class="submenu">
+                                        <li class="submenu-item"><a href="#">Eggs</a></li>
+                                        <li class="submenu-item"><a href="#">Tofu</a></li>
+                                        <li class="submenu-item"><a href="#">Tempeh</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="#" class="submenu-toggle">
+                                <span>Mexican</span>
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="#">Chiles en Nogada</a></li>
+                                <li class="submenu-item"><a href="#">Tlayudas</a></li>
+                                <li class="submenu-item"><a href="#">Cochinita Pibil</a></li>
+                                <li class="submenu-item"><a href="#">Mole Poblano</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="#" class="submenu-toggle">
+                                <span>Specials</span>
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="#">Halo Halo</a></li>
+                                <li class="submenu-item"><a href="#">Leche Flan</a></li>
+                                <li class="submenu-item"><a href="#">Ice Cream</a></li>
+                                <li class="submenu-item"><a href="#">Mais Con Yelo</a></li>
+                            </ul> 
+                        </li>
+                    </ul>
+                </div>
+               
+                <label for="payment">Mode of Payment:</label>
+                <select id="payment" name="payment" required>
+                    <option value="cash">Cash</option>
+                    <option value="credit_card">Credit Card</option>
+                    <option value="debit_card">Debit Card</option>
+                </select>
+                <label for="dine-in-take-out">Dine-In / Take-Out:</label>
+                <div class="radio-group">
+                    <input type="radio" id="dine-in" name="dine-in-take-out" value="dine-in" required>
+                    <label for="dine-in">Dine-In</label>
+                    <input type="radio" id="take-out" name="dine-in-take-out" value="take-out" required>
+                    <label for="take-out">Take-Out</label>
+                </div>
+                <label for="comments">Comments/Feedback:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                <input type="submit" value="Place Order" class="order-button">
+                <input type="reset" value="Cancel Order" class="cancel-button">
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
